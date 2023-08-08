@@ -755,11 +755,11 @@ a.text-secondary:hover {
 
 @media screen and (max-width: 768px) {
 
-    .new-price{
+    .new-price {
         font-size: 14px;
     }
 
-    .old-price{
+    .old-price {
         font-size: 14px;
     }
 
