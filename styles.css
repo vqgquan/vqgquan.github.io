@@ -1,3 +1,14 @@
+/*RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Vu Quoc Gia Quan
+ID: s3927120
+Acknowledgement: 
+Fahasha website for book information
+W3school for responsive web design technique
+https://www.youtube.com/watch?fbclid=IwAR1b2dkTVrMgAQHofiRZvn6a1w9gp7mGmnhi6_3HdV2fqmfh8ahWISHLjsg&v=oLgtucwjVII&feature=youtu.be for making the responsive navigation bar
+*/
 * {
     box-sizing: border-box
 }
@@ -743,6 +754,14 @@ a.text-secondary:hover {
 }
 
 @media screen and (max-width: 768px) {
+
+    .new-price{
+        font-size: 14px;
+    }
+
+    .old-price{
+        font-size: 14px;
+    }
 
     .copyright {
         font-size: 14px;
