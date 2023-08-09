@@ -13,6 +13,19 @@ https://www.youtube.com/watch?fbclid=IwAR1b2dkTVrMgAQHofiRZvn6a1w9gp7mGmnhi6_3Hd
     box-sizing: border-box
 }
 
+@font-face {
+    font-family: Proxima;
+    src: url(./font/Proxima\ Nova\ Font.otf);
+}
+
+h3{
+    font-family: Proxima;
+}
+
+h4{
+    font-family: Proxima;
+}
+
 .header-box {
     display: flex;
     padding: 10px;
