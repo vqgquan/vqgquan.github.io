@@ -9,23 +9,24 @@ Fahasha website for book information
 W3school for responsive web design technique
 https://www.youtube.com/watch?fbclid=IwAR1b2dkTVrMgAQHofiRZvn6a1w9gp7mGmnhi6_3HdV2fqmfh8ahWISHLjsg&v=oLgtucwjVII&feature=youtu.be for making the responsive navigation bar
 */
+
+/* Reset box-sizing for all elements */
 * {
     box-sizing: border-box
 }
 
+/* Define a custom font face */
 @font-face {
     font-family: Proxima;
-    src: url(./font/Proxima\ Nova\ Font.otf);
+    src: url(./font/proxima-nova-font.otf);
 }
 
-h3{
+/* Styling for all h3 elements */
+.special-heading{
     font-family: Proxima;
 }
 
-h4{
-    font-family: Proxima;
-}
-
+/* Header box styling */
 .header-box {
     display: flex;
     padding: 10px;
@@ -34,12 +35,13 @@ h4{
 
 }
 
-
+/* Navigation bar for header styling */
 .navbar {
     position: absolute;
     right: 0;
 }
 
+/* Styling for breadcrumbs */
 .breadcrumbs {
     font-size: 16px;
     padding: 10px;
@@ -60,6 +62,7 @@ h4{
     font-weight: bold;
 }
 
+/* Styling for navigation links */
 .navbar > nav > ul {
     float: right;
     margin-right: 20px;
@@ -77,23 +80,25 @@ h4{
     text-transform: uppercase;
 }
 
+/* Styling for the image container */
 .image-container {
     padding-left: 15px;
 }
 
+/* Styling for the logo */
 .logo {
     max-width: 100px;
     min-height: 100px;
     border-radius: 50%;
 }
 
-
-
+/* Overall body styling */
 body {
     font-family: Helvetica, Arial, "sans-serif";
     margin: 0
 }
 
+/* Styling for old price with discount */
 .old-price {
     text-decoration: line-through;
     color: #666;
@@ -101,16 +106,20 @@ body {
     display: inline-block;
 }
 
+/* Styling for new price */
 .new-price {
     color: tomato;
     font-size: 16px;
 }
 
+/* Main content container styling*/
 .container {
     width: 80%;
     margin: auto;
 }
 
+
+/* Styling for category position */
 .category-position {
     justify-content: center;
     align-items: center;
@@ -119,11 +128,13 @@ body {
     max-width: 100%;
 }
 
+/* Styling for flex layout rows */
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Styling for columns with width of one-third */
 .w-33 {
     width: 33.33%;
     min-height: 400px;
@@ -132,55 +143,63 @@ body {
     justify-content: center;
 }
 
-
+/* Styling for images with 100% width and auto height */
 .img-100 {
     width: 100%;
     height: auto
 }
 
+/* Styling for images with max width of 50% and auto height */
 .img-50 {
     max-width: 50%;
     height: auto
 }
 
+/* Styling for images with max width of 70% and auto height */
 .img-70 {
     max-width: 70%;
     height: auto;
 }
 
+/* Styling for images with width of 20% and auto height */
 .img-20 {
     width: 20%;
     height: auto;
 }
 
+/* Styling for columns with width of one-fourth */
 .w-25 {
     width: 25%;
     min-height: 100px;
     padding: 15px;
 }
 
+/* Styling for columns with width of one-half (50%) */
 .w-50 {
     width: 33.33%;
     min-height: 100px;
     padding: 15px;
 }
 
-
+/* Styling for content area */
 .content {
     background: transparent;
     min-height: 100%;
     padding: 15px;
 }
 
+/* Styling for images within content */
 .content img {
     height: 80%
 }
 
+/* Styling for box displaying prices */
 .box-price {
     height: 100%;
     width: 100%;
 }
 
+/* Styling for contact box */
 .contact-box {
     max-width: 80%;
     margin: 0 auto;
@@ -190,6 +209,12 @@ body {
     border-radius: 10px;
 }
 
+/* Styling for checkbox group */
+.checkbox-group{
+    padding-top: 10px;
+}
+
+/* Styling for select element within contact box */
 .contact-box select {
     padding: 10px;
     margin-bottom: 15px;
@@ -198,16 +223,19 @@ body {
     width: 100%;
 }
 
+/* Styling for headings within contact box */
 .contact-box h3 {
     text-align: center;
     margin-bottom: 20px;
 }
 
+/* Styling for forms within contact box */
 .contact-box form {
     display: flex;
     flex-direction: column;
 }
 
+/* Styling for input and textarea within contact box */
 .contact-box input,
 .contact-box textarea {
     padding: 10px;
@@ -216,33 +244,37 @@ body {
     border-radius: 4px;
 }
 
+/* Styling for button group */
 .button-group {
     display: flex;
     justify-content: space-between;
 }
 
+/* Styling for submit button */
 .button-group button {
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
 }
 
+/* Styling for reset button */
 .button-group button[type="submit"] {
     background-color: #007BFF;
     color: #fff;
     border: none;
 }
 
+
+/* Styling for button hover effect */
 .button-group button[type="reset"] {
     background-color: #ccc;
     color: #000;
     border: none;
 }
 
-.button-group button:hover {
-    background-color: #0056b3;
-}
 
+
+/* Styling for label-checkbox */
 .label-checkbox {
     display: flex;
     align-items: center;
@@ -252,14 +284,21 @@ body {
     margin-right: 10px;
 }
 
+/*styling for button-group*/
 .button-group {
     display: flex;
     justify-content: space-between;
 }
 
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for radio group */
 .radio-group {
     display: flex;
     align-items: center;
+    padding-top: 10px;
 }
 
 .radio-group label {
@@ -269,8 +308,10 @@ body {
 .contact {
     padding-top: 10%;
     padding-bottom: 10%;
+    font-size: 16px;
 }
 
+/*styling for copyright line*/
 .copyright {
     display: flex;
     align-items: center;
@@ -279,16 +320,7 @@ body {
     padding: 10px;
 }
 
-.underline {
-    position: absolute;
-    bottom: -5px; /* Adjust the distance of the underline from the header */
-    left: 0;
-    width: 150px;
-    height: 2px; /* Adjust the thickness of the underline */
-    background-color: #34d5db; /* Adjust the color of the underline */
-    border-radius: 5px; /* Optional: Add rounded corners to the underline */
-}
-
+/* Styling for hover effect on buttons */
 .hover-up-button {
     display: inline-block;
     color: white;
@@ -297,18 +329,19 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: transform 0.2s ease-out; /* Transition for the transform property */
+    transition: transform 0.2s ease-out;
 }
 
-/* Hover styles for the button */
 .hover-up-button:hover {
-    transform: translateY(-5px); /* Move the button up by 5 pixels on hover */
+    transform: translateY(-5px); 
 }
 
+/* Styling for text over image */
 .text-over-image {
     padding: 15px;
 }
 
+/* Styling for book details */
 .book-detail {
     padding: 0 15px;
     display: flex;
@@ -317,6 +350,7 @@ body {
     text-align: center;
 }
 
+/* Styling for show button */
 .show-button {
     display: flex;
     justify-content: center;
@@ -329,31 +363,26 @@ body {
     cursor: pointer;
 }
 
+/* Styling for information section */
 .info {
     display: flex;
     justify-content: space-between;
 }
 
+/* Styling for box-price */
 .box-price {
     display: flex;
     justify-content: space-between
 }
 
-.new-price {
-    color: tomato
-}
-
-.old-price {
-    text-decoration: line-through;
-    color: #666
-}
-
+/* Styling for summary section */
 .summary {
     background-color: rgba(255, 255, 242, 0.5);
     padding: 10px;
     border-radius: 20px;
 }
 
+/* Styling for footer section */
 .footer-box {
     display: flex;
     align-items: center;
@@ -363,11 +392,12 @@ body {
     min-height: 100%;
 }
 
+/* Styling for left alignment with 20% offset */
 .left-20{
     left: 40%;
 }
 
-
+/* Styling for navigation bar for footer*/
 .navbar2 > nav > ul > li > a {
     color: white;
     padding: 7px 13px;
@@ -402,6 +432,7 @@ body {
     color: #f1c40f;
 }
 
+/* Styling for book details */
 .book-detail {
     background-color: rgb(234, 230, 230);
     justify-content: center;
@@ -410,6 +441,8 @@ body {
     height: 20%;
 }
 
+
+/* Styling for search container */
 search-container {
     display: flex;
     justify-content: center;
@@ -417,15 +450,16 @@ search-container {
     background-color: #f2f2f2;
 }
 
+/* Styling for search input */
 #search {
     padding: 10px;
     width: 450px;
     border: 1px solid #ccc;
-    border-radius: 20px; /* Adjust the border-radius to control the roundness of the corners */
+    border-radius: 20px;
     outline: none;
 }
 
-
+/*banner styling*/
 .banner {
     height: 100%;
     width: 100%;
@@ -472,6 +506,7 @@ a {
     text-decoration: none
 }
 
+/*Premade config for later usage in design*/
 .btn-primary {
     background-color: #007BFF;
     padding: 10px 30px;
@@ -623,6 +658,7 @@ a.text-secondary:hover {
     justify-content: space-around
 }
 
+
 .my-30 {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -630,6 +666,10 @@ a.text-secondary:hover {
 
 .mx-auto {
     margin: auto
+}
+
+.font-17{
+    font-size: 17px;
 }
 
 .big-font {
@@ -650,7 +690,7 @@ a.text-secondary:hover {
 
 /*----- */
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     .container {
         width: 95%;
         margin: auto
@@ -705,7 +745,9 @@ a.text-secondary:hover {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
+    /* ... Additional styling for larger screens ... */
+    /* ... Define how smaller elements should behave ... */
     .container {
         width: 80%;
         margin: auto
@@ -761,7 +803,7 @@ a.text-secondary:hover {
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
     .small-image-mobile {
         display: none;
     }
@@ -777,7 +819,13 @@ a.text-secondary:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 992px) {
+    .small-image-mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
     .navbar2 a:hover {
         background: transparent;
         transition: 0.5s;
